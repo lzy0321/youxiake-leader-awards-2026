@@ -128,3 +128,25 @@
 .winner-ticker{display:flex;align-items:center;gap:10px;margin:15px 0 23px;padding:9px 12px;border-radius:9px;background:#f3f6ff;border:1px solid #d8e1f5;font-size:11px;line-height:1.5}.winner-ticker-label{flex:none;color:#a68a40;font-size:10px}.winner-ticker-window{min-width:0;overflow:hidden;height:17px}.winner-ticker-window>span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#7c8fb6}.ticker-enter{animation:ticker-enter .35s ease-out}@keyframes ticker-enter{from{opacity:0;transform:translateY(100%)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.ticker-enter{animation:none}}
 
 .year-art{background:linear-gradient(150deg,#e4d9f3,#ad9dcf);color:#fffae9}.gear-art{background:linear-gradient(150deg,#f1e2c4,#d0ae86);color:#fffbe8}
+
+/* Voting rows and a prominent lottery entry. */
+.leader-identity,.podium .leader-identity,.leader-grid .leader-identity{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px}
+.podium .leader-identity{align-items:center}
+.leader-identity>span{width:auto}.podium .leader-identity strong{max-width:none;font-size:13px}
+.leader-grid .leader-card{grid-template-columns:42px minmax(0,1fr) auto auto;gap:10px;padding-right:10px;padding-left:44px}
+.leader-grid .leader-score{font-size:12px}
+.leader-quick-vote{flex:none;padding:8px 12px;border:0;border-radius:8px;background:#ffea68;color:#806a28;font-size:12px;font-weight:600;white-space:nowrap}
+.podium .leader-quick-vote{margin-top:5px;padding:6px 18px;font-size:11px}
+.full-ranking-row{gap:9px;padding:11px 10px}
+.full-ranking-row>b{width:25px;flex:none;font-size:11px}
+.full-ranking-row .leader-avatar{width:36px;height:36px}
+.full-ranking-row>div:has(>strong){min-width:0}
+.full-ranking-row>span{font-size:11px;white-space:nowrap}
+.full-ranking-row .leader-quick-vote{padding:8px 10px;font-size:11px}
+.task-heading .task-close{margin-left:auto}
+.task-lottery-banner{display:flex;align-items:center;gap:9px;min-height:82px;margin:17px 0 4px;padding:10px 11px;border:1px solid #ebd17e;border-radius:12px;background:linear-gradient(110deg,#fff5c7,#ffe8a4);color:#7f6128;text-decoration:none;box-shadow:0 3px 12px #b6973d16}
+.task-lottery-banner>img{flex:none;width:45px;height:57px;object-fit:contain;transform:rotate(-9deg)}
+.task-lottery-banner>div{flex:1;min-width:0}.task-lottery-banner strong{display:block;font-size:14px;line-height:1.5}
+.task-lottery-banner span{display:block;margin-top:5px;font-size:10px;color:#ad8b45;line-height:1.6}
+.task-lottery-banner>b{flex:none;font-size:11px;padding:7px 9px;border-radius:20px;background:#fffc;color:#97702a}
+@media(max-width:360px){.leader-grid .leader-card{grid-template-columns:36px minmax(0,1fr) auto auto;gap:7px;padding-left:39px}.leader-grid .leader-avatar{width:36px;height:36px}.leader-grid .leader-score{font-size:11px}.leader-quick-vote{padding:7px 10px;font-size:11px}.task-lottery-banner{gap:7px;padding:9px}.task-lottery-banner strong{font-size:12px}.task-lottery-banner>img{width:35px}.task-lottery-banner>b{padding:6px 7px}.full-ranking-row{gap:7px}}
